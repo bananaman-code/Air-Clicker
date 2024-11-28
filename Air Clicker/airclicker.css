@@ -1,0 +1,76 @@
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.whiteText {
+    color: white;
+    font-family:'Times New Roman', Times, serif;
+
+}
+
+body {
+    background-color: black;
+
+}
+
+.howmuchair {
+    padding-left: 2%;
+}
+
+.mainCloud {
+   width: 50%; 
+   cursor: pointer
+}
+
+.maincloud {
+    size: 50%;
+}
+
+.inline {
+    display: inline-flex;
+}
+
+#nameOfItem {
+    font-size: 150%;
+    display: inline-block;
+    padding: 10px 200px 0px 10px;   /* -- seting all padding in one line---- */
+  /*   padding-left: 10px;
+    padding-right: 200px;
+    padding-top: 10px; */
+}
+
+#item1 {
+    outline-style: solid;
+    outline-width: 1px;
+    outline-color: white;
+}
+
+.padding {
+    padding: 10px 200px 0px 7.5px;  /* one line padding */
+   /*  padding-left: 7.5px;
+    padding-top: 10px;
+    padding-right: 200px; */
+}
+
+
+.costOfItem , #airCost {    /* ---adding aircost id -- */
+    padding-left: 68px;
+
+
+}
+
+.personBreathing {
+    display: inline-flex;
+    width: 50px;
+    height: 50px;
+    padding: 15px 0px 20px 7.5px;  /* -- all padding in one line ,  you can set diferent px in the padding  ex "padding : top rigth bottom left" ---- */
+    float: left;
+   /*  padding-left: 7.5px; */
+   /*  padding-top: 15px; */
+   
+   /*  padding-bottom: 20px; */
+    outline: 1px solid white;
+    cursor: pointer;
+} 
