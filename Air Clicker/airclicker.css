@@ -20,6 +20,7 @@ body {
 }
 
 .mainCloud {
+    align-items: center;
    width: 50%; 
    cursor: pointer
 }
@@ -30,6 +31,7 @@ body {
 
 .inline {
     display: inline-flex;
+    flex-direction: column;
 }
 
 #nameOfItem {
@@ -74,3 +76,8 @@ body {
     outline: 1px solid white;
     cursor: pointer;
 } 
+
+.center-text {
+    width: 100%;
+    text-align: center;
+}
