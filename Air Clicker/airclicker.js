@@ -16,7 +16,7 @@ $(".personBreathing ").click(()=>{
     AirPerSecond = AirPerSecond + breathPerSecond
     showingAir = Math.round(air*10) / 10
     $(".howmuchair").html(showingAir + ' air ');
-    breath = breath * 1.1
+    breath = breath * 1.3
    $('#airCost').text(Math.round(breath) + ' air ');
    console.log('click');
   } 
@@ -27,5 +27,5 @@ setInterval(function() {
   air=AirPerSecond+air
   showingAir = Math.round(air*10) / 10
   $(".howmuchair").html(showingAir + ' air ');
-  $(".howMuchAps").html(AirPerSecond + " Air Per Second")
+  $(".howMuchAps").html(Math.round(AirPerSecond*10) / 10 + " Air Per Second")
 },1000)
