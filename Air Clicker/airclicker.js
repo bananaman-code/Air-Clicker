@@ -27,4 +27,5 @@ setInterval(function() {
   air=AirPerSecond+air
   showingAir = Math.round(air*10) / 10
   $(".howmuchair").html(showingAir + ' air ');
+  $(".howMuchAps").html(AirPerSecond + " Air Per Second")
 },1000)
