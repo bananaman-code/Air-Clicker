@@ -1,8 +1,10 @@
-var breath = 25;
+var tree = 25;
 var air = 0;
 var AirPerSecond = 0;
-var breathPerSecond = 0.2;
+var treePerSecond = 0.2;
 var airPerClick = 1;
+var breath = 110;
+var breathPerSecond = 1;
 
 $(".maincloud").click(()=> {
   air = airPerClick + air
@@ -10,18 +12,35 @@ $(".maincloud").click(()=> {
   $(".howmuchair").html(showingAir + ' air ');
 });
 
-$(".personBreathing ").click(()=>{
+$(".palmTree ").click(()=>{
+  if (air >= Math.round(tree)) {
+    air = air - Math.round(tree)
+    AirPerSecond = AirPerSecond + treePerSecond
+    showingAir = Math.round(air*10) / 10
+    $(".howmuchair").html(showingAir + ' air ');
+    tree = tree * 1.3
+   $('#treeCost').text(Math.round(tree) + ' air ');
+   console.log('click');
+  }
+  else {
+    alert("Not enough air!")
+  } 
+});
+
+$(".personBreathing").click(()=>{
   if (air >= Math.round(breath)) {
     air = air - Math.round(breath)
     AirPerSecond = AirPerSecond + breathPerSecond
     showingAir = Math.round(air*10) / 10
     $(".howmuchair").html(showingAir + ' air ');
     breath = breath * 1.3
-   $('#airCost').text(Math.round(breath) + ' air ');
+   $('#breathCost').text(Math.round(breath) + ' air ');
    console.log('click');
+  }
+  else {
+    alert("Not enough air!")
   } 
 });
-
 
 setInterval(function() {
   air=AirPerSecond+air
